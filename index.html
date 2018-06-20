@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> ⚡ Lightning Network Rebalancer - Vulpem Ventures </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="bulma.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="bulma-pageloader.min.css" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <section class="hero is-dark is-fullheight">
+    <div class="pageloader">
+      <span class="title">Pageloader</span>
+    </div>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <div class="column is-8 is-offset-2">
+          <h3 class="title has-text-white"> ⚡ Lightning Network Rebalancer [TESTNET]</h3>
+          <br />
+          <strong>Deposit</strong>
+          <p>Receive a payment to your channel using onchain Bitcoin</p>
+          <br />
+          <ol class="has-text-left">
+            <li>Deposit Bitcoin here:
+              <strong>n2nkn4KFNtNbu6Q6GQPZwNZWDiiNsmm9d8</strong>
+            </li>
+            <li>Paste the transaction hash</li>
+            <li>Create a LN Invoice and paste below</li>
+          </ol>
+          <br />
+          <div class="box">
+            <form onsubmit="return false;">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-large" type="email" placeholder="Your Email (optional)" autofocus="">
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <input id="txHash" class="input is-large" type="text" placeholder="Tx hash">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input id="invoice" class="input is-large" type="text" placeholder="Your LN invoice">
+                </div>
+              </div>
+              <button onClick="javascript:deposit()" class="button is-block is-info is-large is-fullwidth">Reedem deposit</button>
+            </form>
+          </div>
+          <strong>Withdraw</strong>
+          <p>Receive onchain Bitcoin paying with Lightning Network </p>
+          <br />
+          <div class="box">
+            <form onsubmit="return false;">
+              <div class="field">
+                <div class="control">
+                  <input class="input is-large" type="email" placeholder="Your Email (optional)" autofocus="">
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <input id="address" class="input is-large" type="text" placeholder="Your Bitcoin address">
+                </div>
+              </div>
+              <div class="field">
+                <div class="control">
+                  <input id="amount" class="input is-large" type="text" placeholder="Amount (satoshi)">
+                </div>
+              </div>
+              <button onClick="withdraw()" class="button is-block is-info is-large is-fullwidth">Request withdraw</button>
+            </form>
+          </div>
+          <p class="has-text-white">
+            Made with ❤️ by
+            <a href="https://vulpem.com" target="_blank">Vulpem Ventures</a>&nbsp;
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
