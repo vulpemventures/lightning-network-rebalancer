@@ -8,7 +8,7 @@
     document.getElementById("subtitle").style.display = "block"
   }
 } */
-const backendUrl = "http://testnet.lnd.vulpem.com:3000"
+const backendUrl = "https://testnet.lnd.vulpem.com:3000"
 
 const sendRequest = (route, body) => new Promise((resolve, reject) => {
   /*   const button = document.getElementById("button"),
